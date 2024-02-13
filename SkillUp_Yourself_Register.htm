@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>SkillUp Yourself Register</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="SkillUp_Yourself_Register.css">
+    <link rel="icon" type="images/x-icon" href="C:\Skill_Up_Yourself\SkillUp_Yourself_logo.jpg" />
+</head>
+
+<body>
+<h1> SkillUp Yourself Register Form </h1>
+<form name="form" action="C:\VMS_Assignment\Response_Submiited.htm">
+    
+<div class = "form-structure">
+<label for="name" id="label-name">Name</label>
+<input type="text" value=""name="uname" placeholder="Enter your name" onkeyup="Register_Form_Validation()"/>
+Name_Validation:<span id="mylocation" style="color:rgb(0, 38, 255);">      Enter your name</span>   
+</div>
+<div class ="form-structure">
+<label for="email" id="label-email">Email</label>
+<input type="text" value=""name="email" placeholder="Enter your email" onkeyup="Email_Validation()"/>
+Email_Validation:<span id="MyPlace" style="color:rgb(0, 38, 255);">      Enter your email</span>   
+</div>
+<div class ="form-structure">
+<label for="phnumber" id="label-phnumber">Phone Number</label>
+<input type="text" value=""name="phnum" placeholder="Enter your phone number" onkeyup="Phnumber_Validation()"/>
+Number_Validation:<span id="myloc" style="color:rgb(0, 38, 255);">      Enter your Phone Number</span>   
+</div>
+<div class ="form-structure">
+<label for="age" id="label-age">Age</label>
+<input type="text" name="age" placeholder="Enter your age" onkeyup="Age_Validation()"/>
+Age_Validation:<span id="myage" style="color:rgb(0, 38, 255);">      Enter your Age</span>   
+</div>
+<div class="form-structure">
+<label for="role" id="label-role">Which option best describes you?</label>
+<!--Dropdown options-->
+<select name="role" id="role">
+<option value="student">Student</option>
+<option value="intern">Intern</option>
+<option value="professional">Professional</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="form-structure">
+<label for "opinion" id="label-opinion">Would you recommend <b>Skill_Up_Yourself</b> to a friend? </label>
+<!--Radio button-->
+<label for="opinion-1">
+<input type="radio" id="opinion-1" name="opinion">Yes</input> </label>
+<label for="opinion-2">
+<input type="radio" id="opinion-2" name="opinion">No</input> </label>
+<label for="opinion-3">
+<input type="radio" id="opinion-3" name="opinion">May Be</input> </label>
+</div>
+
+<div class="form-structure">
+<label for="comment">Any comments or suggestions? </label>
+<!--multi line text input control-->
+<textarea name="comment" id=comment" placeholder="Enter your comments here"> </textarea>
+</div>
+<!--Multi line tedt input control -->
+<button type="submit" value = "submit">Submit </button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="SkillUp_Yourself_Home.js" charset="utf-8"></script>
+
+</form>
+</body>
+</html>
+
+
+

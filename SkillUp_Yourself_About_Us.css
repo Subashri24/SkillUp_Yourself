@@ -1,0 +1,38 @@
+.header{
+    font-family:Arial,Calibri;
+    font-size:30px;
+    background-color:#e0ffff;
+    text-align:center;
+    }
+
+.nav_menu{
+    overflow: hidden;
+    background-color:#7fff;
+    }
+
+.nav_menu a{
+    float: left;
+    display:block;
+    color: #000000;
+    text-align: center;
+    padding:18px 20px;
+    text-decoration:solid;
+}
+
+.nav_menu a:hover{
+    background-color:#7cfc00;
+    color:#ff00ff;
+}
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
+.About_Us{
+    background-color: #f5f5dc; 
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: -5px -5px 10px #df0ec3;
+    font-size: large;
+}
