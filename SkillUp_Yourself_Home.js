@@ -27,7 +27,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-alert("hello");
+
 
 
   function Register_Form_Validation(){
@@ -61,10 +61,20 @@ function Phnumber_Validation(){
   var num=document.form.phnum.value;  
   var phone = /^\d{10}$/;
   if ((num.match(phone))){   
-     msg="Perfect";
-
-  }else{   
+     msg="perfect";
+     $("span#myloc").removeClass("bad");
+     $("span#myloc").addClass("good");
+     //$("myloc").addClass("good");
+  }   
+  /*else if((num.exec(phone)))
+   {
+    msg="enter number";
+    $("span#myloc").addClass("bad");
+   }
+    */
+  else{   
     msg ="Enter valid phone number";
+  $("span#myloc").addClass("bad");
   }
   document.getElementById("myloc").innerText=msg;   
 }   

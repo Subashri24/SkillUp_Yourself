@@ -60,3 +60,11 @@ width: 100%;
 margin-top: 50px;
 margin-bottom: 20px;
 }
+
+.good{
+    background-color:green;
+
+}
+.bad{
+    background-color: red;
+}
