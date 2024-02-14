@@ -13,11 +13,14 @@ padding: 30px 20px;
 box-shadow: -5px -5px 10px #df0ec3;
 }
 span{
-    background-color: yellow;
+    background-color: #f28500;
     border: 1px solid black;
     text-align: center;
+    color:#fdf5e6;
     padding-right: 20px;
     padding-left: 20px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .form-structure {
@@ -68,7 +71,7 @@ margin-bottom: 20px;
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
-    color: #4c0c67;
+    
 }
 
 .bad{
@@ -77,4 +80,6 @@ margin-bottom: 20px;
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
+    
+    
 }
