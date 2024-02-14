@@ -28,18 +28,19 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
-
-  function Register_Form_Validation(){
+  function Name_Validation(){
   var msg;
   var name = document.form.uname.value;
   var perfect_name = /^[A-Za-z]+$/;
     if ((name.match(perfect_name))){
-      msg="Perfect";
+      msg="   Perfect  ";
+      $("span#myname").removeClass("bad");
+     $("span#myname").addClass("good");
     }else{
       msg="Enter valid name";
+      $("span#myname").addClass("bad");
     }
-    document.getElementById('mylocation').innerText=msg;
+    document.getElementById('myname').innerText=msg;
   }
 
   function Email_Validation(){
@@ -48,12 +49,14 @@ function showSlides(n) {
     var atposition=x.indexOf("@");   
     var dotposition=x.lastIndexOf(".");   
     if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){   
-    message = "Please enter a valid email address";    
+    message = "Please enter a valid email address"; 
+    $("span#myemail").addClass("bad");   
 } else{
     message="Perfect";
-  
+    $("span#myemail").removeClass("bad");
+    $("span#myemail").addClass("good");
 }  
-  document.getElementById('MyPlace').innerText=message;
+  document.getElementById('myemail').innerText=message;
   }
   
 function Phnumber_Validation(){
@@ -62,30 +65,28 @@ function Phnumber_Validation(){
   var phone = /^\d{10}$/;
   if ((num.match(phone))){   
      msg="perfect";
-     $("span#myloc").removeClass("bad");
-     $("span#myloc").addClass("good");
-     //$("myloc").addClass("good");
+     
+     $("span#myphone").removeClass("bad");
+     $("span#myphone").addClass("good");
+     
   }   
-  /*else if((num.exec(phone)))
-   {
-    msg="enter number";
-    $("span#myloc").addClass("bad");
-   }
-    */
   else{   
     msg ="Enter valid phone number";
-  $("span#myloc").addClass("bad");
+  $("span#myphone").addClass("bad");
   }
-  document.getElementById("myloc").innerText=msg;   
+  document.getElementById("myphone").innerText=msg;   
 }   
 
  function Age_Validation(){
   var age=document.form.age.value;
-  if(isNaN(age)||age<1||age>100){
+  if(isNaN(age)||age<1||age>=100){
     msg="Enter valid age";
+    $("span#myage").addClass("bad");  
   }
   else{
     msg="Perfect";
+    $("span#myage").removeClass("bad");
+    $("span#myage").addClass("good");
   }
   document.getElementById("myage").innerText=msg;  
  }
