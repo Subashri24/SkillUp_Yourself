@@ -1,0 +1,52 @@
+body{
+    background-color: #f5f5dc; 
+    font-family:georgia,garamond,serif;
+    text-align:center;
+    }
+    
+    form{
+    background-color:#e0ffff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: -5px -5px 10px #df0ec3;
+    }
+    .login_form-structure{
+        text-align: left;
+        margin-bottom: 25px;
+        }
+        /* Styling form-structure Label */ 
+        .login_form-structure{
+        display: block;
+        margin-bottom: 10px;
+        }
+        /* Styling form-structure input, 
+        textarea */
+        .login_form-structure,
+        .login_form-structure {
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 95%;
+        }
+                /* Styling form-structure Radio 
+        button and Checkbox */
+        .login_form-structure
+        {
+        display: inline-block;
+        
+        }
+        
+        button {
+            background-color: #7fff00 ;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: calibri;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            }
